@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+{#{% load fontawesome_6 %}#}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kanyarat Tailin</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'stylesheets/bt523/css/bootstrap.css' %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'stylesheets/fontawesome-free-6.2.1/css/all.css' %}">
+
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 text-bg-warning">
+            {% include 'header.html' %}
+            <h1 class="text-white Text-Center">Kanyarat Tailin</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 bg-info text-dark">
+            {% include 'menu.html' %}
+        </div>
+        <div class="col-9 bg-secondary text-primary">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+
+</div>
+<script src="{% static 'stylesheets/bt523/js/bootstrap.bundle.js' %}"></script>
+<script src="{% static 'stylesheets/fontawesome-free-6.2.1/js/all.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{% load static %}
+
+<ul class="list-group">
+    <li class="list-group-item active">
+        <i class="fa fa-solid fa-crown"></i>Menu:
+    </li>
+    <li class="list-group-item">
+        <a href="{% url 'firstWeb' %}">
+            <i class="fa fa-home"></i> Home
+        </a>
+    </li>
+    <li class="list-group-item">
+        <a href="{% url 'firstWeb' %}">
+            <i class="fa-solid fa-user"></i> First Web
+        </a>
+    </li>
+    <li class="list-group-item">
+        <a href="{% url 'secondpage' %}">
+            <i class="fa-solid fa-user-graduate"></i> Second Page
+        </a>
+    </li>
+    <li class="list-group-item">
+        <a href="{% url 'thridpage' %}">
+            <i class="fa-solid fa-music"></i> Thrid Page
+        </a>
+    </li>
+    <li class="list-group-item">
+        <a href="{% url 'hny' %}">
+            <i class="fa-solid fa-gift "></i> Happy New Year 2023
+        </a>
+    </li>
+
+</ul>

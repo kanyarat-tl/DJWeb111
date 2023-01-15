@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="text-danger"><h1>This is My Sample Web</h1> </div>
+    <h2>Welcome to Digital Business Program</h2>
+
+
+    <img src="{% static 'images/me1.jpg'%}" width="450" height="600"
+         class='rounded'>
+    <img src="{% static 'images/me2.jpg'%}" width="390" height="600"
+         class='rounded'>
+    <br><br>
+    <a href="{% url 'secondpage' %}" class="btn btn-warning">Go to Second Page</a>
+    <a href="{% url 'thridpage' %}" class="btn btn-success">Go to Thrid Page</a>
+    <br>
+    <br><br><br><br>
+
+{% endblock %}

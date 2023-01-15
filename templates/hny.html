@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <br>
+    <div id="hny" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#hny" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#hny" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#hny" data-bs-slide-to="2"></button>
+
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'images/hny1.jpg' %}" alt="Happy New Year 1" class="d-block w-100"></div>
+            <div class="carousel-item">
+                <img src="{% static 'images/hny2.jpg' %}" alt="Happy New Year 2" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/hny3.jpg' %}" alt="Happy New Year 3" class=" d-block w-100">
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#hny" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hny" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <div class="alert alert-success alert-dismissible">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Happy New Year 2023!</strong>ขอให้ทุกคนมีความสุขมาก ๆ นะงับ
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+
+    <br>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <div class="alert alert-danger">
+                <strong>ด่วน!</strong>วันนี้น้ำมันขึ้นราคา รีบเติมด่วน
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+
+    <div>
+        <span class="badge rounded-pill bg-primary">สุขสันต์วันอาทิตย์ .....</span>
+        <span class="badge rounded-pill bg-secondary">พรุ่งนี้ก็มีเรียน</span>
+        <span class="badge rounded-pill bg-success">สบาย ๆ</span>
+        <span class="badge rounded-pill bg-danger"><h1>BIS3R1</h1></span>
+
+    </div>
+
+    <div class="progress" style="height:30px">
+        <div class="progress-bar" style="width:70%;color:yellow;font-size: 20px;">70%</div>
+    </div> <br>
+
+    <img src="{% static '/images/PD1.jpg' %}" width="200px" height="250px" class="rounded-circle">
+    คัตเตอร์ขนาดเล็ก <br>
+    <span class="badge rounded-pill bg-danger"><h1>4500.00</h1></span>
+    <br>
+    ฝากาต้มน้ำชนิด Soft opening เปิด- ปิด อัตโนมัติเพียงกดเบาๆ
+    <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#smeg">
+        Click
+    </button>
+    <a href="" data-bs-toggle="collapse" data-bs-target="#smeg">Read more...</a>
+    <div id="smeg" class="collapse">
+        กำลังไฟ : 2,400 วัตต์ ขนาดสินค้า สูง 248 กว้าง 226 ลึก 171 รับประกันสินค้า 1 ปี <br>
+        ฐานกาต้มน้ำชนิดหมุนได้ 360 องศา <br>
+        ฐานวางแบบกันลื่น (Anti slip) <br>
+        หยุดทำงานอัตโนมัติเมื่อน้ำเดือดที่อุณหภูมิ 100 องศาเซลเซียส <br>
+        ฐานกาต้มน้ำสีโครเมียมแวววาว <br>
+        ตัวเครื่องทำจากสเตนเลส สตีล <br>
+        ปุ่มควบคุมทำจากสเตนเลส สตีล <br>
+        ฝาเปิดปิดทำจากสเตนเลส สตีล <br>
+        พวยรินน้ำเสตนเลส สตีล <br>
+        ฟิเลเตอร์สเตนเลส สตีล <br>
+        ฟิลเตอร์กรองสามารถถอดออกได้ <br>
+        ปริมาตรสูงสุด 1.7 ลิตร / 7 ถ้วย <br>
+        มาตรวัดบอกระดับน้ำที่คงเหลือ <br>
+    </div> <br>
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+        Sign Up
+    </button>
+    <div class="modal" id="myModal" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">คำสั่งซื้อมีปัญหา</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    สินค้าหมดนะจ๊ะ ไม่พอจำหน่ายตามคำต้องการในการสั่งซ์้อ กรุณาติดต่อ Admin เพื่อสั่งจองล่วงหน้า
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" >Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+{% endblock %}

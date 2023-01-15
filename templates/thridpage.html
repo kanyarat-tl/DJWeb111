@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="bg-light text-primary">
+    <h1 class="bg-danger text-info"> Welcome to Thrid Page  </h1>
+    <h2 class="text-danger">My Favorite Song   </h2>
+    <table class="table table-warning">
+        <tr>
+            <td><img src="{% static 'images/ms1.jpg' %}"width="200px"height="200px"></td>
+            <td><img src="{% static 'images/ms2.jpg' %}"width="200px"height="200px"></td>
+            <td><img src="{% static 'images/ms3.jpg' %}"width="200px"height="200px"></td>
+            <td><img src="{% static 'images/ms4.jpg' %}"width="200px"height="200px"></td>
+        </tr>
+    </table>
+
+</div>
+
+    <p class="bg-warning text-white text-center ">
+        Ryan:<br>
+        It's hard to believe<br>
+        That I couldn't see<br>
+        Together:<br>
+        You were always there beside me<br>
+        Thought I was alone<br>
+        With no one to hold<br>
+        But you were always right beside me<br>
+        Sharpay:<br>
+        And this feelings like no other<br>
+        Together:<br>
+        I want you to know<br>
+        I've never had someone that knows me like you do<br>
+        the way you do<br>
+        I've never had someone as good for me as you<br>
+        no one like you<br>
+        so lonely before I finally found<br>
+        what i've been looking for<br>
+        Sharpay:<br>
+        So good to be seen<br>
+        So good to be heard<br>
+        Together:<br>
+        Don't have to say a word<br>
+        Ryan:<br>
+        For so long I was lost<br>
+        So good to be found<br>
+        Together:<br>
+        I'm loving having you around<br>
+        Ryan:<br>
+        This feeling's like no other<br>
+        Together:<br>
+        I want you to know<br>
+        I've never had someone that knows me like you do<br>
+        The way you do<br>
+        I've never had someone as good for me as you<br>
+        No one like you<br>
+        So lonely before, I finally found<br>
+        what I've been looking for<br>
+        Together:<br>
+        Doo Doo DooDoo<br>
+        Doo Doo DooDoo<br>
+        Do Do<br>
+        Woa-ah-ah-oh<br>
+        Doo Doo DooDoo<br>
+        Doo Doo DooDoo<br>
+        Do Do<br>
+        Woa-ah-ah-oh<br>
+    </p><br>
+
+     Other Favorite Song:
+    <ul type="square">
+        <li> Complicated-avril lavigne </li>
+        <li> Wish You Were Here-avril lavigne </li>
+        <li> When You're Gone-avril lavigne </li>
+        <li> Hello Kitty-avril lavigne </li>
+    </ul>
+<br>
+
+    <a href="{% url 'firstWeb' %}"  class="btn btn-warning">Go to  (1) First Web</a><br>
+    <a href="{% url 'secondpage' %}"  class="btn btn-success">Go to  (2) Second Page</a><br>
+    <a href="http://www.google.com" target="_blank">
+        <img src="{% static 'images/google.png' %}" width="150px" height="70px" class="bg-white"> <br>
+    </a>
+
+{% endblock %}
+
+
+
+
+
+
+
+
